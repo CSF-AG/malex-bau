@@ -1,0 +1,288 @@
+@import './partials/colors';
+@import './partials/mixins';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  &:hover {
+    color: $green;
+  }
+}
+
+section {
+  padding: 80px 0;
+}
+
+.container-lg {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 1.25rem 2.5rem;
+  border-radius: 3px;
+  background-color: $green;
+  color: white;
+  display: inline-block;
+  transition: 0.1s ease-in;
+  &:hover {
+    background: $dark-green;
+    color: #fff;
+  }
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+}
+
+/* HEADER STYLES */
+
+header {
+  border-top: 8px solid $green;
+}
+
+.infobar {
+  padding: 1rem 0;
+  font-size: 0.8rem;
+  align-items: center;
+}
+
+.infobar__contact {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.infobar__contact-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.infobar__icon {
+  height: 30px;
+}
+
+.logo {
+  width: 400px;
+  height: auto;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+/* HERO STYLES */
+
+.hero {
+  height: 55vh;
+  position: relative;
+  background: url(../img/header.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero__content {
+  position: relative;
+  top: 30%;
+  transform: translateY(-50%);
+  color: #fff;
+  text-align: center;
+}
+
+.prefix {
+  margin: 0 auto 0.75rem auto;
+  padding: 0.75rem;
+  font-size: 1rem;
+  width: 200px;
+  text-transform: uppercase;
+  border-bottom: 3px solid #fff;
+}
+
+.tagline {
+  font-size: 4rem;
+}
+
+.animation__wrapper {
+  display: inline-block;
+  &::after {
+    content: '';
+    animation: slidein 16s ease-in-out infinite;
+  }
+  @keyframes slidein {
+    0% {
+      content: 'Baubegleitung';
+    }
+    20% {
+      content: 'Neu- & Umbauten';
+    }
+    40% {
+      content: 'Malerarbeiten';
+    }
+    60% {
+      content: 'Gipserarbeiten';
+    }
+    80% {
+      content: 'Reinigungen';
+    }
+    100% {
+      content: 'Baubegleitung';
+    }
+  }
+}
+
+.hero__text {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+/* WELCOME STYLES */
+.welcome {
+  background: $light-gray;
+  .flex {
+    gap: 3rem;
+    img {
+      width: 300px;
+    }
+  }
+}
+
+/* DIENSTLEISTUNGEN STYLES */
+
+.dienstleistungen > .flex-between {
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.dienstleistungen__item {
+  flex: 1 1 350px;
+  height: 300px;
+  min-width: 30%;
+  background: $light-gray;
+  transition: 0.1s ease-in;
+  &:hover .dienstleistungen__caption {
+    background: $dark-green;
+    color: #fff;
+  }
+}
+
+.dienstleistungen__item-cta {
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: center;
+  background: $green;
+  color: #fff;
+  transition: 0.1s ease-in;
+  &:hover {
+    background: $dark-green;
+    color: #fff;
+  }
+}
+
+.dienstleistungen__item-cta > p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.reinigungen,
+.baubegleitung,
+.gipserarbeiten,
+.malerarbeiten,
+.bauten {
+  height: 100%;
+  position: relative;
+}
+
+.baubegleitung {
+  background: url('../img/baubegleitung.jpg') center;
+  @include background-cover;
+}
+
+.bauten {
+  background: url('../img/bauten.jpg') center;
+  @include background-cover;
+}
+
+.malerarbeiten {
+  background: url('../img/malerarbeiten.jpg') center;
+  @include background-cover;
+}
+
+.gipserarbeiten {
+  background: url('../img/gipserarbeiten.jpg') center;
+  @include background-cover;
+}
+
+.reinigungen {
+  background: url('../img//reinigung2.jpg') center;
+  @include background-cover;
+}
+
+.dienstleistungen__caption {
+  padding: 1rem;
+  font-size: 1.25rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: $green;
+  color: #fff;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  padding: 80px 0;
+  background: $green;
+  color: white;
+}
+
+.footer__logo {
+  width: 300px;
+}
+
+.footer__contact {
+  gap: 3rem;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 10px;
+  img {
+    height: 40px;
+    color: #fff;
+  }
+}
+
+.footer__address,
+.footer__web,
+.footer__socials {
+  padding-top: 20px;
+}
