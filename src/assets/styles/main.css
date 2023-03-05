@@ -44,6 +44,17 @@ section {
           justify-content: space-between;
 }
 
+.flex-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
 .btn {
   padding: 1.25rem 2.5rem;
   border-radius: 3px;
@@ -220,7 +231,6 @@ nav {
   width: 300px;
 }
 
-/* DIENSTLEISTUNGEN STYLES */
 .dienstleistungen > .flex-between {
   gap: 1.5rem;
   -ms-flex-wrap: wrap;
@@ -307,6 +317,47 @@ nav {
   bottom: 0px;
   background: #429c45;
   color: #fff;
+}
+
+/* DIENSTLEISTUNGEN STYLES */
+.service__item {
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #f4f4f4;
+}
+
+.service__item:last-child {
+  margin: 0;
+}
+
+.service__img,
+.service__description {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+  width: 50%;
+  min-width: 400px;
+  min-height: 400px;
+}
+
+.service__description {
+  padding: 2rem;
+}
+
+.service__header {
+  margin-bottom: 1rem;
+  color: #429c45;
+}
+
+.odd {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 /* FOOTER STYLES */
