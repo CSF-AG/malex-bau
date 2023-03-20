@@ -28,7 +28,7 @@
         <RouterLink to="/dienstleistungen">Dienstleistungen</RouterLink>
         <RouterLink to="/galerie">Galerie</RouterLink>
         <RouterLink to="/kontakt">Kontakt</RouterLink>
-        <RouterLink to="/kontakt" class="btn btn-sm">Offertenanfrage</RouterLink>
+        <RouterLink to="/offerte" class="btn btn-sm">Offertenanfrage</RouterLink>
       </nav>
     </div>
   </header>

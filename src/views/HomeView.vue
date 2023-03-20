@@ -10,7 +10,7 @@
             Der perfekte Partner in Sachen <br /><span class="animation__wrapper"></span>
           </h2>
           <p class="hero__text">Wir beraten Sie gerne</p>
-          <RouterLink to="/kontakt" class="btn">Jetzt Ihre Offerte anfordern</RouterLink>
+          <RouterLink to="/offerte" class="btn">Jetzt Ihre Offerte anfordern</RouterLink>
         </div>
       </div>
     </section>
@@ -53,7 +53,7 @@
             <div class="dienstleistungen__caption">Reinigung</div>
           </div>
         </RouterLink>
-        <RouterLink to="/Kontakt" class="dienstleistungen__item dienstleistungen__item-cta">
+        <RouterLink to="/offerte" class="dienstleistungen__item dienstleistungen__item-cta">
           <p>Zögern Sie nicht und fordern Sie noch heute Ihre unverbindliche Offerte an.</p>
         </RouterLink>
       </div>

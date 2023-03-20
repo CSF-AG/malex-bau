@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import DienstleistungenView from '../views/DienstleistungenView.vue'
 import GalerieView from '../views/GalerieView.vue'
 import KontaktView from '../views/KontaktView.vue'
+import OfferteView from '../views/OfferteView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -26,6 +27,11 @@ const router = createRouter({
       path: '/kontakt',
       name: 'kontakt',
       component: KontaktView
+    },
+    {
+      path: '/offerte',
+      name: 'offerte',
+      component: OfferteView
     }
   ]
 })
