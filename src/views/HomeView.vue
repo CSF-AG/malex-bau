@@ -20,37 +20,34 @@
         <div>
           <h3>Willkommen bei Malex Bau</h3>
           <p>
-            Unser Unternehmen bietet innen alle Dienstleistungen im Bereich Bau an. Ob Neubau, Umbau
-            oder Renovationen – wir begleiten und unterstützen Ihr Projekt in jeder Phase, von der
-            Planung über die Ausführung bis zur Abnahme. Wir führen alle unsere Arbeiten transparent
-            und mit äußerster Sorgfalt durch.
+            Entdecken Sie unsere umfassenden Baudienstleistungen, die Ihr Projekt von Anfang bis Ende begleiten – von Neubauten über Umbauten bis hin zu Renovierungen. Profitieren Sie von unserer transparenten und sorgfältigen Arbeitsweise, die Ihr Projekt zum Erfolg führt. Kontaktieren Sie uns noch heute und starten Sie Ihr Bauvorhaben mit uns als verlässlichem Partner!
           </p>
         </div>
       </div>
     </section>
     <section class="dienstleistungen">
       <div class="container-lg flex-between">
-        <div class="dienstleistungen__item">
+        <RouterLink to="/dienstleistungen" class="dienstleistungen__item">
           <div class="baubegleitung">
             <div class="dienstleistungen__caption">Baubegleitung</div>
           </div>
-        </div>
-        <div class="dienstleistungen__item">
+        </RouterLink>
+        <RouterLink to="/dienstleistungen" class="dienstleistungen__item">
           <div class="bauten"><div class="dienstleistungen__caption">Neu - & Umbauten</div></div>
-        </div>
-        <div class="dienstleistungen__item">
+        </RouterLink >
+        <RouterLink to="/dienstleistungen" class="dienstleistungen__item">
           <div class="malerarbeiten">
             <div class="dienstleistungen__caption">Malerarbeiten</div>
           </div>
-        </div>
-        <div class="dienstleistungen__item">
+        </RouterLink>
+        <RouterLink to="/dienstleistungen" class="dienstleistungen__item">
           <div class="gipserarbeiten">
             <div class="dienstleistungen__caption">Gipserarbeiten</div>
           </div>
-        </div>
+        </RouterLink >
         <RouterLink to="/dienstleistungen" class="dienstleistungen__item">
-          <div class="reinigungen">
-            <div class="dienstleistungen__caption">Reinigung</div>
+          <div class="boden">
+            <div class="dienstleistungen__caption">Bodenbeläge</div>
           </div>
         </RouterLink>
         <RouterLink to="/offerte" class="dienstleistungen__item dienstleistungen__item-cta">

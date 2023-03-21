@@ -211,17 +211,14 @@ button {
   0% {
     content: 'Baubegleitung';
   }
-  20% {
+  25% {
     content: 'Neu- & Umbauten';
   }
-  40% {
+  50% {
     content: 'Malerarbeiten';
   }
-  60% {
+  75% {
     content: 'Gipserarbeiten';
-  }
-  80% {
-    content: 'Reinigungen';
   }
   100% {
     content: 'Baubegleitung';
@@ -232,17 +229,14 @@ button {
   0% {
     content: 'Baubegleitung';
   }
-  20% {
+  25% {
     content: 'Neu- & Umbauten';
   }
-  40% {
+  50% {
     content: 'Malerarbeiten';
   }
-  60% {
+  75% {
     content: 'Gipserarbeiten';
-  }
-  80% {
-    content: 'Reinigungen';
   }
   100% {
     content: 'Baubegleitung';
@@ -311,7 +305,7 @@ button {
           transform: translateY(-50%);
 }
 
-.reinigungen,
+.boden,
 .baubegleitung,
 .gipserarbeiten,
 .malerarbeiten,
@@ -337,6 +331,11 @@ button {
 
 .gipserarbeiten {
   background: url("../img/gipserarbeiten.jpg") center;
+  background-size: cover;
+}
+
+.boden {
+  background: url("../img/holz.jpg") center;
   background-size: cover;
 }
 
