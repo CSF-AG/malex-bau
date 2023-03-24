@@ -12,37 +12,37 @@
             <div class="input__wrapper">
               <div class="input__item">
                 <label for="name">Name:</label>
-                <input type="text" />
+                <input type="text" name="nachname" />
               </div>
               <div class="input__item">
                 <label for="vorname">Vorname:</label>
-                <input type="text" />
+                <input type="text" name="vorname" />
               </div>
             </div>
             <label for="adresse">Adresse:</label>
-            <input type="text" />
+            <input type="text" name="adresse" />
             <div class="input__wrapper">
               <div class="input__item">
                 <label for="plz">PLZ:</label>
-                <input type="text" />
+                <input type="text" name="plz" />
               </div>
               <div class="input__item">
                 <label for="ort">Ort:</label>
-                <input type="text" />
+                <input type="text" name="ort" />
               </div>
             </div>
             <div class="input__wrapper">
               <div class="input__item">
                 <label for="tel">Telefon:</label>
-                <input type="text" />
+                <input type="text" name="telefon" />
               </div>
               <div class="input__item">
                 <label for="mail">Email:</label>
-                <input type="email" />
+                <input type="email" name="email" />
               </div>
             </div>
             <label for="nachricht">Ihre Nachricht:</label>
-            <textarea></textarea>
+            <textarea name="nachricht"></textarea>
             <button class="btn btn-sm submit">Senden</button>
           </form>
         </div>
