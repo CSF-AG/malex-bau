@@ -21,8 +21,8 @@
     setup() {
       const images = [
         // Your static image URLs here
-        "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
+       "../src/assets/img/bauten.jpg",
+       "/src/assets/img/gipserarbeiten.jpg",
        "../src/assets/img/bauten.jpg",
        "../src/assets/img/gipserarbeiten.jpg",
        "../src/assets/img/bauten.jpg",

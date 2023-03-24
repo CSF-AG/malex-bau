@@ -1,8 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -23,7 +22,6 @@ a {
   text-decoration: none;
   color: #000;
 }
-
 a:hover {
   color: #429c45;
 }
@@ -39,28 +37,17 @@ section {
 }
 
 .flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .flex-between {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .flex-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -70,10 +57,8 @@ section {
   background-color: #429c45;
   color: white;
   display: inline-block;
-  -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
 }
-
 .btn:hover {
   background: #1a753c;
   color: #fff;
@@ -91,29 +76,19 @@ header {
 .infobar {
   padding: 1rem 0;
   font-size: 0.8rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .infobar__contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .infobar__contact-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .infobar__icon {
@@ -130,13 +105,9 @@ header {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 label {
@@ -177,8 +148,7 @@ button {
 .hero__content {
   position: relative;
   top: 30%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   color: #fff;
   text-align: center;
 }
@@ -200,46 +170,25 @@ button {
 .animation__wrapper {
   display: inline-block;
 }
-
 .animation__wrapper::after {
-  content: '';
-  -webkit-animation: slidein 16s ease-in-out infinite;
-          animation: slidein 16s ease-in-out infinite;
+  content: "";
+  animation: slidein 16s ease-in-out infinite;
 }
-
-@-webkit-keyframes slidein {
-  0% {
-    content: 'Baubegleitung';
-  }
-  25% {
-    content: 'Neu- & Umbauten';
-  }
-  50% {
-    content: 'Malerarbeiten';
-  }
-  75% {
-    content: 'Gipserarbeiten';
-  }
-  100% {
-    content: 'Baubegleitung';
-  }
-}
-
 @keyframes slidein {
   0% {
-    content: 'Baubegleitung';
+    content: "Baubegleitung";
   }
   25% {
-    content: 'Neu- & Umbauten';
+    content: "Neu- & Umbauten";
   }
   50% {
-    content: 'Malerarbeiten';
+    content: "Malerarbeiten";
   }
   75% {
-    content: 'Gipserarbeiten';
+    content: "Gipserarbeiten";
   }
   100% {
-    content: 'Baubegleitung';
+    content: "Baubegleitung";
   }
 }
 
@@ -252,32 +201,25 @@ button {
 .welcome {
   background: #f4f4f4;
 }
-
 .welcome .flex {
   gap: 3rem;
 }
-
 .welcome .flex img {
   width: 300px;
 }
 
 .dienstleistungen > .flex-between {
   gap: 1.5rem;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .dienstleistungen__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 350px;
-          flex: 1 1 350px;
+  flex: 1 1 350px;
   height: 300px;
   min-width: 30%;
   background: #f4f4f4;
-  -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
 }
-
 .dienstleistungen__item:hover .dienstleistungen__caption {
   background: #1a753c;
   color: #fff;
@@ -289,10 +231,8 @@ button {
   text-align: center;
   background: #429c45;
   color: #fff;
-  -webkit-transition: 0.1s ease-in;
   transition: 0.1s ease-in;
 }
-
 .dienstleistungen__item-cta:hover {
   background: #1a753c;
   color: #fff;
@@ -301,8 +241,7 @@ button {
 .dienstleistungen__item-cta > p {
   position: relative;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 .boden,
@@ -357,11 +296,8 @@ button {
 /* DIENSTLEISTUNGEN STYLES */
 .service__item {
   margin-bottom: 2rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   background: #f4f4f4;
 }
 
@@ -371,9 +307,7 @@ button {
 
 .service__img,
 .service__description {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  flex: 1 1 50%;
   width: 50%;
   min-width: 400px;
   min-height: 400px;
@@ -389,39 +323,27 @@ button {
 }
 
 .odd {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /* KONTAKT STYLES */
 .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  flex-wrap: wrap-reverse;
   gap: 60px;
 }
 
 .form__wrapper {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 600px;
-          flex: 1 1 600px;
+  flex: 1 1 600px;
 }
 
 .input__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
 
 .input__item {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+  flex: 1 1 50%;
 }
 
 .submit {
@@ -430,9 +352,7 @@ button {
 
 .form__aside {
   padding: 30px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 200px;
-          flex: 1 1 200px;
+  flex: 1 1 200px;
   background: #f4f4f4;
   border-radius: 8px;
   color: gray;
@@ -461,12 +381,9 @@ footer {
 }
 
 .footer__socials {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 10px;
 }
-
 .footer__socials img {
   height: 40px;
 }
@@ -475,5 +392,4 @@ footer {
 .footer__web,
 .footer__socials {
   padding-top: 20px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
