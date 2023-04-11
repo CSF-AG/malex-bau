@@ -380,6 +380,26 @@ h4 {
   margin-bottom: 30px;
 }
 
+/*Impressum Styles */
+.impressum-wrapper {
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.impressum {
+  line-height: 1.5rem;
+}
+
+.impressum-logo,
+.impressum {
+  flex: 1 1 47%;
+}
+
+.impressum-logo > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* FOOTER STYLES */
 
 footer {
