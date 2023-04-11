@@ -13,8 +13,7 @@
             </RouterLink>
           </div>
           <div class="footer__address">
-            <strong>Malex Bau GmbH</strong> <br />Lange Gasse 28 <br />CH - 4052 Basel
-            <br />Aleksandar Milovanovic
+            <strong>Malex Bau GmbH</strong> <br />Lange Gasse 28 <br />CH - 4052
           </div>
           <div class="footer__web">
             <p>info@malex-bau.ch</p>
