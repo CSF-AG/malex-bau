@@ -280,6 +280,11 @@ button {
   background-size: cover;
 }
 
+.abbruch {
+  background: url("../img/abbruch.jpg") center;
+  background-size: cover;
+}
+
 .reinigungen {
   background: url("../img//reinigung2.jpg") center;
   background-size: cover;

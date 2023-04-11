@@ -285,6 +285,11 @@ button {
   @include background-cover;
 }
 
+.abbruch {
+  background: url("../img/abbruch.jpg") center;
+  @include background-cover;
+}
+
 .reinigungen {
   background: url("../img//reinigung2.jpg") center;
   @include background-cover;
