@@ -1,55 +1,40 @@
 <template>
-    <div class="gallery">
-      <div class="image-container" v-for="(image, index) in images" :key="index">
-        <img :src="image" @click="openLightbox(index)" />
-      </div>
-  
-      <div v-if="lightboxVisible" class="lightbox" @click="closeLightbox">
-        <div class="lightbox-content" @click.stop>
-          <img :src="images[selectedImageIndex]" />
-          <button class="prev" @click.stop="previousImage">&#10094;</button>
-          <button class="next" @click.stop="nextImage">&#10095;</button>
-        </div>
+  <div class="gallery">
+    <div class="image-container" v-for="(image, index) in images" :key="index">
+      <img :src="image" @click="openLightbox(index)" />
+    </div>
+
+    <div v-if="lightboxVisible" class="lightbox" @click="closeLightbox">
+      <div class="lightbox-content" @click.stop>
+        <img :src="images[selectedImageIndex]" />
+        <button class="prev" @click.stop="previousImage">&#10094;</button>
+        <button class="next" @click.stop="nextImage">&#10095;</button>
       </div>
     </div>
-  </template>
-  
-  <script>
-  import { ref } from "vue";
-  
-  export default {
-    setup() {
-      const images = [
-        // Your static image URLs here
-       "../src/assets/img/bauten.jpg",
-       "/src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-       "../src/assets/img/gipserarbeiten.jpg",
-       "../src/assets/img/bauten.jpg",
-        // Add more images as needed
-      ];
-  
-      const lightboxVisible = ref(false);
-      const selectedImageIndex = ref(0);
-  
-      function openLightbox(index) {
-        selectedImageIndex.value = index;
+  </div>
+</template>
+
+<script>
+import { ref } from "vue";
+
+export default {
+  setup() {
+    const images = [
+      // Your static image URLs here
+      "../src/assets/img/gal1.jpg",
+      "/src/assets/img/gal2.jpg",
+      "../src/assets/img/gal3.jpg",
+      "../src/assets/img/gal4.jpg",
+      "../src/assets/img/gal5.jpg",
+      "../src/assets/img/gal6.jpg",
+      // Add more images as needed
+    ];
+
+    const lightboxVisible = ref(false);
+    const selectedImageIndex = ref(0);
+
+    function openLightbox(index) {
+      selectedImageIndex.value = index;
       lightboxVisible.value = true;
     }
 
@@ -58,7 +43,8 @@
     }
 
     function previousImage() {
-      selectedImageIndex.value = (selectedImageIndex.value - 1 + images.length) % images.length;
+      selectedImageIndex.value =
+        (selectedImageIndex.value - 1 + images.length) % images.length;
     }
 
     function nextImage() {
@@ -77,7 +63,7 @@
   },
 };
 </script>
-  
+
 <style scoped>
 .gallery {
   display: flex;
@@ -94,9 +80,10 @@
 }
 
 .image-container > img {
-    width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-
 
 .lightbox {
   position: fixed;
