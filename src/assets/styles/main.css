@@ -115,13 +115,15 @@ label {
   display: block;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 13px;
   width: 100%;
   border: 1px solid #f4f4f4;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: #429c45;
   border: 1px solid #429c45;
 }
@@ -358,7 +360,8 @@ button {
   color: gray;
 }
 
-.form__aside h3, h4 {
+.form__aside h3,
+h4 {
   color: black;
 }
 

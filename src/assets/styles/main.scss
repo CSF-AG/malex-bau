@@ -1,5 +1,5 @@
-@import './partials/colors';
-@import './partials/mixins';
+@import "./partials/colors";
+@import "./partials/mixins";
 
 * {
   margin: 0;
@@ -116,18 +116,20 @@ nav {
 
 label {
   margin: 30px 0 7px 0;
-  display:block;
+  display: block;
 }
 
-input, textarea {
+input,
+textarea {
   padding: 13px;
   width: 100%;
   border: 1px solid $light-gray;
 }
 
-input:focus, textarea:focus {
-outline: $green;
-border: 1px solid $green;
+input:focus,
+textarea:focus {
+  outline: $green;
+  border: 1px solid $green;
 }
 
 select {
@@ -175,24 +177,24 @@ button {
 .animation__wrapper {
   display: inline-block;
   &::after {
-    content: '';
+    content: "";
     animation: slidein 16s ease-in-out infinite;
   }
   @keyframes slidein {
     0% {
-      content: 'Baubegleitung';
+      content: "Baubegleitung";
     }
     25% {
-      content: 'Neu- & Umbauten';
+      content: "Neu- & Umbauten";
     }
     50% {
-      content: 'Malerarbeiten';
+      content: "Malerarbeiten";
     }
     75% {
-      content: 'Gipserarbeiten';
+      content: "Gipserarbeiten";
     }
     100% {
-      content: 'Baubegleitung';
+      content: "Baubegleitung";
     }
   }
 }
@@ -259,32 +261,32 @@ button {
 }
 
 .baubegleitung {
-  background: url('../img/baubegleitung.jpg') center;
+  background: url("../img/baubegleitung.jpg") center;
   @include background-cover;
 }
 
 .bauten {
-  background: url('../img/bauten.jpg') center;
+  background: url("../img/bauten.jpg") center;
   @include background-cover;
 }
 
 .malerarbeiten {
-  background: url('../img/malerarbeiten.jpg') center;
+  background: url("../img/malerarbeiten.jpg") center;
   @include background-cover;
 }
 
 .gipserarbeiten {
-  background: url('../img/gipserarbeiten.jpg') center;
+  background: url("../img/gipserarbeiten.jpg") center;
   @include background-cover;
 }
 
 .boden {
-  background: url('../img/holz.jpg') center;
+  background: url("../img/holz.jpg") center;
   @include background-cover;
 }
 
 .reinigungen {
-  background: url('../img//reinigung2.jpg') center;
+  background: url("../img//reinigung2.jpg") center;
   @include background-cover;
 }
 
@@ -356,7 +358,7 @@ button {
   margin-top: 30px;
 }
 
-.form__aside{
+.form__aside {
   padding: 30px;
   flex: 1 1 200px;
   background: $light-gray;
@@ -364,15 +366,14 @@ button {
   color: gray;
 }
 
-.form__aside h3, h4 {
+.form__aside h3,
+h4 {
   color: black;
 }
 
 .aside__wrapper {
-  margin-bottom: 30px;  
+  margin-bottom: 30px;
 }
-
-
 
 /* FOOTER STYLES */
 
