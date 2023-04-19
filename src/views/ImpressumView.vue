@@ -20,15 +20,15 @@
           </p>
           <br />
           <p>
-            Registerart: <br />
-            Register/Ort: <br />
-            Registernummer: <br />
-            UID MWST-Nummer: <br />
-            Bankverbindung: <br />
-            IBAN: <br />
-            BIC: <br />
-            Clearing-Nummer: <br />
-            Kontonummer:
+            Registerart: Firmenbuch <br />
+            Register/Ort: Handelsregister des Kantons Basel-Stadt<br />
+            Registernummer: CH-400-4441403-2 <br />
+            UID MWST-Nummer: CHE-189.653.256 <br />
+            Bankverbindung: Credit Suisse Basel<br />
+            IBAN: CH90 0483 5134 3001 0100 0<br />
+            Kontonummer: 1343001-01<br />
+            BIC: CRESCHZZ80A<br />
+            Clearing-Nummer: 4835
           </p>
         </div>
       </div>
