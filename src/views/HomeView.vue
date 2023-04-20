@@ -3,6 +3,7 @@
 <template>
   <main>
     <section class="hero">
+      <div class="hero__fade"></div>
       <div class="container-lg">
         <div class="hero__content">
           <h1 class="prefix">Malex Bau GmbH</h1>
