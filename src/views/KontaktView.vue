@@ -52,8 +52,13 @@
             <h4>Adresse</h4>
             MALEX BAU GmbH<br />
             Lange Gasse 28<br />
-            4052 Basel, CH
+            4052 Basel, CH<br />
+            <br />
+            Telefon: +41 61 401 10 87 <br />
+            E-Mail: info@malex-bau.ch <br />
+            Webseite: www.malex-bau.ch<br />
           </div>
+          <div class="aside__wrapper"></div>
           <div class="aside__wrapper">
             <h4>Unsere Arbeitszeiten</h4>
             Mo - Fr: 07.00 - 18.00 Uhr<br />
