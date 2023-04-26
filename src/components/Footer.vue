@@ -20,10 +20,16 @@
             <p>+41 61 401 10 87</p>
           </div>
         </div>
-        <div class="footer__socials">
-          <img src="../assets/icons/fb.svg" alt="facebook icon" />
-          <img src="../assets/icons/youtube.svg" alt="facebook icon" />
-          <img src="../assets/icons/insta.svg" alt="facebook icon" />
+
+        <div>
+          <div class="footer__socials">
+            <img src="../assets/icons/fb.svg" alt="facebook icon" />
+            <img src="../assets/icons/youtube.svg" alt="facebook icon" />
+            <img src="../assets/icons/insta.svg" alt="facebook icon" />
+          </div>
+          <div class="footer__link">
+            <RouterLink to="/impressum">Impressum</RouterLink>
+          </div>
         </div>
       </div>
     </div>

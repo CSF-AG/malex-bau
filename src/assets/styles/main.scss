@@ -417,6 +417,10 @@ footer {
   background: $light-gray;
 }
 
+footer a {
+  color: $dark-gray;
+}
+
 .footer__logo {
   width: 300px;
 }
@@ -431,6 +435,12 @@ footer {
   img {
     height: 40px;
   }
+}
+
+.footer__link {
+  text-align: right;
+  padding-top: 20px;
+  color: $dark-gray;
 }
 
 .footer__address,
