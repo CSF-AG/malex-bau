@@ -140,7 +140,7 @@ button {
 
 /* HERO STYLES */
 .hero {
-  height: 55vh;
+  min-height: 55vh;
   position: relative;
   background: url(../img/header1.png);
   background-size: cover;
@@ -158,8 +158,6 @@ button {
 
 .hero__content {
   position: relative;
-  top: 30%;
-  transform: translateY(-50%);
   color: #fff;
   text-align: center;
   z-index: 10;
