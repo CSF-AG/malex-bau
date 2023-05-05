@@ -1,7 +1,22 @@
 <template>
   <div class="gallery">
-    <div class="image-container" v-for="(image, index) in images" :key="index">
-      <img :src="image" @click="openLightbox(index)" />
+    <div class="image-container">
+      <img src="../assets/img/gal1.jpg" />
+    </div>
+    <div class="image-container">
+      <img src="../assets/img/gal2.jpg" />
+    </div>
+    <div class="image-container">
+      <img src="../assets/img/gal3.jpg" />
+    </div>
+    <div class="image-container">
+      <img src="../assets/img/gal4.jpg" />
+    </div>
+    <div class="image-container">
+      <img src="../assets/img/gal5.jpg" />
+    </div>
+    <div class="image-container">
+      <img src="../assets/img/gal6.jpg" />
     </div>
 
     <div v-if="lightboxVisible" class="lightbox" @click="closeLightbox">
