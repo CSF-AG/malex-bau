@@ -10,7 +10,7 @@
           <p>
             Anschrift: Lange Gasse 28, 4052 Basel, Schweiz <br />
             Rechtsform: Gesellschaft mit beschränkter Haftung<br />
-            Geschäftsführer: Herr Alexandar Milovanovic
+            Geschäftsführer: Herr Aleksandar Milovanovic
           </p>
           <br />
           <p>
