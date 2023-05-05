@@ -22,11 +22,12 @@ export default {
     const images = [
       // Your static image URLs here
       "../src/assets/img/gal1.jpg",
-      "/src/assets/img/gal2.jpg",
+      "./src/assets/img/gal2.jpg",
       "../src/assets/img/gal3.jpg",
       "../src/assets/img/gal4.jpg",
       "../src/assets/img/gal5.jpg",
       "../src/assets/img/gal6.jpg",
+      "./src/assets/img/gal2.jpg",
       // Add more images as needed
     ];
 
