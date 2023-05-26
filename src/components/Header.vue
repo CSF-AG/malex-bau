@@ -2,7 +2,7 @@
   <header>
     <div>
       <div class="infobar container-lg flex-between">
-        <div>
+        <div class="infobar__address">
           <strong>Malex Bau GmbH</strong>, Lange Gasse 28, 4052 Basel, Schweiz
         </div>
         <div class="infobar__contact">
