@@ -248,6 +248,16 @@ button {
   }
 }
 
+@media (max-width: 450px) {
+  .tagline {
+    font-size: 3rem;
+  }
+  .welcome {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
 .dienstleistungen > .flex-between {
   gap: 1.5rem;
   flex-wrap: wrap;
